@@ -1,0 +1,99 @@
+version: 1
+
+balance_sheet:
+  - prefix: "21"
+    category: immobilisations_non_valeurs
+    mass: actif_immobilise
+    normal_side: debit
+    is_fictitious_asset: true
+
+  - prefix: "22"
+    category: immobilisations_incorporelles
+    mass: actif_immobilise
+    normal_side: debit
+    is_fictitious_asset: false
+
+  - prefix: "23"
+    category: immobilisations_corporelles
+    mass: actif_immobilise
+    normal_side: debit
+    is_fictitious_asset: false
+
+  - prefix: "24"
+    category: immobilisations_financieres
+    mass: actif_immobilise
+    normal_side: debit
+    is_fictitious_asset: false
+
+  - prefix: "25"
+    category: immobilisations_financieres
+    mass: actif_immobilise
+    normal_side: debit
+    is_fictitious_asset: false
+
+  - prefix: "28"
+    category: amortissements_immobilisations
+    mass: actif_immobilise
+    normal_side: credit
+    is_contra_asset: true
+
+  - prefix: "29"
+    category: provisions_immobilisations
+    mass: actif_immobilise
+    normal_side: credit
+    is_contra_asset: true
+
+  - prefix: "31"
+    category: stocks
+    mass: actif_circulant_stocks
+    normal_side: debit
+
+  - prefix: "34"
+    category: creances_clients
+    mass: actif_circulant_creances
+    normal_side: debit
+
+  - prefix: "441"
+    category: creances_clients
+    mass: actif_circulant_creances
+    normal_side: debit
+
+  - prefix: "448"
+    category: fournisseurs
+    mass: passif_circulant
+    normal_side: credit
+
+  - prefix: "44"
+    category: autres_creances
+    mass: actif_circulant_creances
+    normal_side: debit
+
+  - prefix: "51"
+    category: tresorerie_actif
+    mass: tresorerie_actif
+    normal_side: debit
+
+  - prefix: "55"
+    category: tresorerie_passif
+    mass: tresorerie_passif
+    normal_side: credit
+
+  - prefix: "11"
+    category: capitaux_propres
+    mass: capitaux_propres
+    normal_side: credit
+
+  - prefix: "12"
+    category: capitaux_propres
+    mass: capitaux_propres
+    normal_side: credit
+
+  - prefix: "13"
+    category: capitaux_propres
+    mass: capitaux_propres
+    normal_side: credit
+
+  - prefix: "14"
+    category: dettes_financement_long_terme
+    mass: dettes_financement
+    normal_side: credit
