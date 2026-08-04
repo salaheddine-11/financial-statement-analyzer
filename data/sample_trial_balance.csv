@@ -1,0 +1,84 @@
+year,account_code,account_label,debit,credit
+2021,2110,Frais preliminaires,50000,0
+2021,2230,Fonds commercial,150000,0
+2021,2340,Constructions,1200000,0
+2021,3111,Stock marchandises,300000,0
+2021,4411,Clients,450000,0
+2021,5141,Banques,200000,0
+2021,2834,Amortissements constructions,0,200000
+2021,1111,Capital social,0,1400000
+2021,1481,Emprunts bancaires,0,500000
+2021,4481,Fournisseurs,0,200000
+2021,5590,Credit de tresorerie,0,50000
+2021,2332,Materiel et outillage,180000,0
+2021,1482,Emprunts bancaires long terme,0,180000
+2021,2355,Materiel de transport,90000,0
+2021,4482,Fournisseurs immobilisations,0,90000
+2021,2610,Titres de participation,60000,0
+2021,1118,Autres primes d apport,0,60000
+2021,2711,Depots et cautionnements verses,250000,0
+2021,1460,Depots et cautionnements recus,0,250000
+2021,3115,Stock produits finis,25000,0
+2021,5591,Credit de tresorerie supplementaire,0,25000
+2021,4452,Etat TVA deductible,320000,0
+2021,4455,Etat TVA due,0,320000
+2021,4711,Charges constatees d avance,210000,0
+2021,4488,Fournisseurs factures non parvenues,0,210000
+2021,5161,Caisse,70000,0
+2021,1119,Autres apports capital,0,70000
+2022,2110,Frais preliminaires,40000,0
+2022,2230,Fonds commercial,150000,0
+2022,2340,Constructions,1250000,0
+2022,3111,Stock marchandises,360000,0
+2022,4411,Clients,620000,0
+2022,5141,Banques,150000,0
+2022,2834,Amortissements constructions,0,260000
+2022,1111,Capital social,0,1400000
+2022,1160,Report a nouveau crediteur,0,100000
+2022,1481,Emprunts bancaires,0,550000
+2022,4481,Fournisseurs,0,220000
+2022,5590,Credit de tresorerie,0,40000
+2022,2332,Materiel et outillage,210000,0
+2022,1482,Emprunts bancaires long terme,0,210000
+2022,2355,Materiel de transport,105000,0
+2022,4482,Fournisseurs immobilisations,0,105000
+2022,2610,Titres de participation,75000,0
+2022,1118,Autres primes d apport,0,75000
+2022,2711,Depots et cautionnements verses,310000,0
+2022,1460,Depots et cautionnements recus,0,310000
+2022,3115,Stock produits finis,30000,0
+2022,5591,Credit de tresorerie supplementaire,0,30000
+2022,4452,Etat TVA deductible,390000,0
+2022,4455,Etat TVA due,0,390000
+2022,4711,Charges constatees d avance,245000,0
+2022,4488,Fournisseurs factures non parvenues,0,245000
+2022,5161,Caisse,85000,0
+2022,1119,Autres apports capital,0,85000
+2023,2110,Frais preliminaires,30000,0
+2023,2230,Fonds commercial,150000,0
+2023,2340,Constructions,1300000,0
+2023,3111,Stock marchandises,470000,0
+2023,4411,Clients,820000,0
+2023,5141,Banques,90000,0
+2023,2834,Amortissements constructions,0,330000
+2023,1111,Capital social,0,1400000
+2023,1160,Report a nouveau crediteur,0,120000
+2023,1481,Emprunts bancaires,0,650000
+2023,4481,Fournisseurs,0,260000
+2023,5590,Credit de tresorerie,0,100000
+2023,2332,Materiel et outillage,240000,0
+2023,1482,Emprunts bancaires long terme,0,240000
+2023,2355,Materiel de transport,120000,0
+2023,4482,Fournisseurs immobilisations,0,120000
+2023,2610,Titres de participation,95000,0
+2023,1118,Autres primes d apport,0,95000
+2023,2711,Depots et cautionnements verses,380000,0
+2023,1460,Depots et cautionnements recus,0,380000
+2023,3115,Stock produits finis,35000,0
+2023,5591,Credit de tresorerie supplementaire,0,35000
+2023,4452,Etat TVA deductible,460000,0
+2023,4455,Etat TVA due,0,460000
+2023,4711,Charges constatees d avance,280000,0
+2023,4488,Fournisseurs factures non parvenues,0,280000
+2023,5161,Caisse,100000,0
+2023,1119,Autres apports capital,0,100000
