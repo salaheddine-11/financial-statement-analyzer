@@ -1,0 +1,41 @@
+﻿,account_code,account_label,matched_prefix,category,mass,mapped
+0,2110,Frais preliminaires,,,,false
+1,2230,Fonds commercial,,,,false
+2,2340,Constructions,,,,false
+3,2355,Materiel de transport,,,,false
+4,2834,Amortissements constructions,,,,false
+5,2835,Amortissements materiel transport,,,,false
+6,3111,Stock marchandises,,,,false
+7,3421,Clients,,,,false
+8,3455,Etat TVA recuperable,,,,false
+9,3491,Charges constatees d avance,,,,false
+10,3501,TVP Actions,,,,false
+11,5141,Banques,,,,false
+12,5161,Caisse,,,,false
+13,6111,Achats revendus de marchandises,,,,false
+14,6121,Achats consommes de matieres,,,,false
+15,6131,Locations et charges locatives,,,,false
+16,6144,Publicite et publications,,,,false
+17,6161,Impots et taxes directs,,,,false
+18,6171,Appointements et salaires,,,,false
+19,6174,Cotisations de securite sociale,,,,false
+20,6193,Dotations d exploitation aux amortissements,,,,false
+21,6311,Interets des emprunts,,,,false
+22,6701,Impots sur les benefices,,,,false
+23,1140,Reserve legale,,,,false
+24,1151,Reserves statutaires,,,,false
+25,1161,Report a nouveau crediteur,,,,false
+26,1481,Emprunts etablissements de credit,,,,false
+27,4411,Fournisseurs,,,,false
+28,4432,Remunerations dues au personnel,,,,false
+29,4441,CNSS,,,,false
+30,4455,Etat TVA facturee,,,,false
+31,4456,Etat TVA due,,,,false
+32,4491,Produits meconsideree,,,,false
+33,5541,Banques solde crediteur,,,,false
+34,7111,Ventes de marchandises,,,,false
+35,7121,Ventes de biens produits,,,,false
+36,7181,Jetons de presence recus,,,,false
+37,7381,Interets et produits assimiles,,,,false
+38,7513,Produits des cessions d immobilisations,,,,false
+39,1111,Capital social,,,,false

@@ -1,84 +1,121 @@
 year,account_code,account_label,debit,credit
-2021,2110,Frais preliminaires,50000,0
-2021,2230,Fonds commercial,150000,0
+2021,2110,Frais preliminaires,70000,0
+2021,2230,Fonds commercial,200000,0
 2021,2340,Constructions,1200000,0
+2021,2355,Materiel de transport,250000,0
+2021,2834,Amortissements constructions,0,120000
+2021,2835,Amortissements materiel transport,0,50000
 2021,3111,Stock marchandises,300000,0
-2021,4411,Clients,450000,0
-2021,5141,Banques,200000,0
-2021,2834,Amortissements constructions,0,200000
-2021,1111,Capital social,0,1400000
-2021,1481,Emprunts bancaires,0,500000
-2021,4481,Fournisseurs,0,200000
-2021,5590,Credit de tresorerie,0,50000
-2021,2332,Materiel et outillage,180000,0
-2021,1482,Emprunts bancaires long terme,0,180000
-2021,2355,Materiel de transport,90000,0
-2021,4482,Fournisseurs immobilisations,0,90000
-2021,2610,Titres de participation,60000,0
-2021,1118,Autres primes d apport,0,60000
-2021,2711,Depots et cautionnements verses,250000,0
-2021,1460,Depots et cautionnements recus,0,250000
-2021,3115,Stock produits finis,25000,0
-2021,5591,Credit de tresorerie supplementaire,0,25000
-2021,4452,Etat TVA deductible,320000,0
-2021,4455,Etat TVA due,0,320000
-2021,4711,Charges constatees d avance,210000,0
-2021,4488,Fournisseurs factures non parvenues,0,210000
-2021,5161,Caisse,70000,0
-2021,1119,Autres apports capital,0,70000
-2022,2110,Frais preliminaires,40000,0
-2022,2230,Fonds commercial,150000,0
-2022,2340,Constructions,1250000,0
-2022,3111,Stock marchandises,360000,0
-2022,4411,Clients,620000,0
-2022,5141,Banques,150000,0
-2022,2834,Amortissements constructions,0,260000
-2022,1111,Capital social,0,1400000
-2022,1160,Report a nouveau crediteur,0,100000
-2022,1481,Emprunts bancaires,0,550000
-2022,4481,Fournisseurs,0,220000
-2022,5590,Credit de tresorerie,0,40000
-2022,2332,Materiel et outillage,210000,0
-2022,1482,Emprunts bancaires long terme,0,210000
-2022,2355,Materiel de transport,105000,0
-2022,4482,Fournisseurs immobilisations,0,105000
-2022,2610,Titres de participation,75000,0
-2022,1118,Autres primes d apport,0,75000
-2022,2711,Depots et cautionnements verses,310000,0
-2022,1460,Depots et cautionnements recus,0,310000
-2022,3115,Stock produits finis,30000,0
-2022,5591,Credit de tresorerie supplementaire,0,30000
-2022,4452,Etat TVA deductible,390000,0
-2022,4455,Etat TVA due,0,390000
-2022,4711,Charges constatees d avance,245000,0
-2022,4488,Fournisseurs factures non parvenues,0,245000
-2022,5161,Caisse,85000,0
-2022,1119,Autres apports capital,0,85000
-2023,2110,Frais preliminaires,30000,0
-2023,2230,Fonds commercial,150000,0
-2023,2340,Constructions,1300000,0
-2023,3111,Stock marchandises,470000,0
-2023,4411,Clients,820000,0
-2023,5141,Banques,90000,0
-2023,2834,Amortissements constructions,0,330000
-2023,1111,Capital social,0,1400000
-2023,1160,Report a nouveau crediteur,0,120000
-2023,1481,Emprunts bancaires,0,650000
-2023,4481,Fournisseurs,0,260000
-2023,5590,Credit de tresorerie,0,100000
-2023,2332,Materiel et outillage,240000,0
-2023,1482,Emprunts bancaires long terme,0,240000
-2023,2355,Materiel de transport,120000,0
-2023,4482,Fournisseurs immobilisations,0,120000
-2023,2610,Titres de participation,95000,0
-2023,1118,Autres primes d apport,0,95000
-2023,2711,Depots et cautionnements verses,380000,0
-2023,1460,Depots et cautionnements recus,0,380000
-2023,3115,Stock produits finis,35000,0
-2023,5591,Credit de tresorerie supplementaire,0,35000
-2023,4452,Etat TVA deductible,460000,0
-2023,4455,Etat TVA due,0,460000
-2023,4711,Charges constatees d avance,280000,0
-2023,4488,Fournisseurs factures non parvenues,0,280000
-2023,5161,Caisse,100000,0
-2023,1119,Autres apports capital,0,100000
+2021,3421,Clients,400000,0
+2021,3455,Etat TVA recuperable,50000,0
+2021,3491,Charges constatees d avance,15000,0
+2021,3501,TVP Actions,40000,0
+2021,5141,Banques,180000,0
+2021,5161,Caisse,20000,0
+2021,6111,Achats revendus de marchandises,900000,0
+2021,6121,Achats consommes de matieres,200000,0
+2021,6131,Locations et charges locatives,80000,0
+2021,6144,Publicite et publications,25000,0
+2021,6161,Impots et taxes directs,20000,0
+2021,6171,Appointements et salaires,350000,0
+2021,6174,Cotisations de securite sociale,75000,0
+2021,6193,Dotations d exploitation aux amortissements,100000,0
+2021,6311,Interets des emprunts,35000,0
+2021,6701,Impots sur les benefices,50000,0
+2021,1140,Reserve legale,0,50000
+2021,1151,Reserves statutaires,0,100000
+2021,1161,Report a nouveau crediteur,0,80000
+2021,1481,Emprunts etablissements de credit,0,400000
+2021,4411,Fournisseurs,0,300000
+2021,4432,Remunerations dues au personnel,0,30000
+2021,4441,CNSS,0,20000
+2021,4455,Etat TVA facturee,0,70000
+2021,4456,Etat TVA due,0,30000
+2021,4491,Produits meconsideree,0,5000
+2021,5541,Banques solde crediteur,0,25000
+2021,7111,Ventes de marchandises,0,1800000
+2021,7121,Ventes de biens produits,0,200000
+2021,7181,Jetons de presence recus,0,5000
+2021,7381,Interets et produits assimiles,0,10000
+2021,7513,Produits des cessions d immobilisations,0,15000
+2021,1111,Capital social,0,1250000
+2022,2110,Frais preliminaires,77000,0
+2022,2230,Fonds commercial,220000,0
+2022,2340,Constructions,1320000,0
+2022,2355,Materiel de transport,275000,0
+2022,2834,Amortissements constructions,0,132000
+2022,2835,Amortissements materiel transport,0,55000
+2022,3111,Stock marchandises,330000,0
+2022,3421,Clients,440000,0
+2022,3455,Etat TVA recuperable,55000,0
+2022,3491,Charges constatees d avance,16500,0
+2022,3501,TVP Actions,44000,0
+2022,5141,Banques,198000,0
+2022,5161,Caisse,22000,0
+2022,6111,Achats revendus de marchandises,990000,0
+2022,6121,Achats consommes de matieres,220000,0
+2022,6131,Locations et charges locatives,88000,0
+2022,6144,Publicite et publications,27500,0
+2022,6161,Impots et taxes directs,22000,0
+2022,6171,Appointements et salaires,385000,0
+2022,6174,Cotisations de securite sociale,82500,0
+2022,6193,Dotations d exploitation aux amortissements,110000,0
+2022,6311,Interets des emprunts,38500,0
+2022,6701,Impots sur les benefices,55000,0
+2022,1140,Reserve legale,0,55000
+2022,1151,Reserves statutaires,0,110000
+2022,1161,Report a nouveau crediteur,0,88000
+2022,1481,Emprunts etablissements de credit,0,440000
+2022,4411,Fournisseurs,0,330000
+2022,4432,Remunerations dues au personnel,0,33000
+2022,4441,CNSS,0,22000
+2022,4455,Etat TVA facturee,0,77000
+2022,4456,Etat TVA due,0,33000
+2022,4491,Produits meconsideree,0,5500
+2022,5541,Banques solde crediteur,0,27500
+2022,7111,Ventes de marchandises,0,1980000
+2022,7121,Ventes de biens produits,0,220000
+2022,7181,Jetons de presence recus,0,5500
+2022,7381,Interets et produits assimiles,0,11000
+2022,7513,Produits des cessions d immobilisations,0,16500
+2022,1111,Capital social,0,1375000
+2023,2110,Frais preliminaires,87500,0
+2023,2230,Fonds commercial,250000,0
+2023,2340,Constructions,1500000,0
+2023,2355,Materiel de transport,312500,0
+2023,2834,Amortissements constructions,0,150000
+2023,2835,Amortissements materiel transport,0,62500
+2023,3111,Stock marchandises,375000,0
+2023,3421,Clients,500000,0
+2023,3455,Etat TVA recuperable,62500,0
+2023,3491,Charges constatees d avance,18750,0
+2023,3501,TVP Actions,50000,0
+2023,5141,Banques,225000,0
+2023,5161,Caisse,25000,0
+2023,6111,Achats revendus de marchandises,1125000,0
+2023,6121,Achats consommes de matieres,250000,0
+2023,6131,Locations et charges locatives,100000,0
+2023,6144,Publicite et publications,31250,0
+2023,6161,Impots et taxes directs,25000,0
+2023,6171,Appointements et salaires,437500,0
+2023,6174,Cotisations de securite sociale,93750,0
+2023,6193,Dotations d exploitation aux amortissements,125000,0
+2023,6311,Interets des emprunts,43750,0
+2023,6701,Impots sur les benefices,62500,0
+2023,1140,Reserve legale,0,62500
+2023,1151,Reserves statutaires,0,125000
+2023,1161,Report a nouveau crediteur,0,100000
+2023,1481,Emprunts etablissements de credit,0,500000
+2023,4411,Fournisseurs,0,375000
+2023,4432,Remunerations dues au personnel,0,37500
+2023,4441,CNSS,0,25000
+2023,4455,Etat TVA facturee,0,87500
+2023,4456,Etat TVA due,0,37500
+2023,4491,Produits meconsideree,0,6250
+2023,5541,Banques solde crediteur,0,31250
+2023,7111,Ventes de marchandises,0,2250000
+2023,7121,Ventes de biens produits,0,250000
+2023,7181,Jetons de presence recus,0,6250
+2023,7381,Interets et produits assimiles,0,12500
+2023,7513,Produits des cessions d immobilisations,0,18750
+2023,1111,Capital social,0,1562500

@@ -1,99 +1,630 @@
-version: 1
+version: 2
 
-balance_sheet:
+mapping_rules:
+  # ==========================================
+  # CLASSE 1 : FINANCEMENT PERMANENT (PASSIF)
+  # ==========================================
+  - prefix: "111"
+    category: capital_social_ou_personnel
+    mass: capitaux_propres
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "112"
+    category: primes_demission_fusion_apport
+    mass: capitaux_propres
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "113"
+    category: ecarts_de_reevaluation
+    mass: capitaux_propres
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "114"
+    category: reserve_legale
+    mass: capitaux_propres
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "115"
+    category: autres_reserves
+    mass: capitaux_propres
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "116"
+    category: report_a_nouveau
+    mass: capitaux_propres
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "118"
+    category: resultats_nets_en_instance_daffectation
+    mass: capitaux_propres
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "119"
+    category: resultat_net_de_lexercice
+    mass: capitaux_propres
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "131"
+    category: subventions_dinvestissement
+    mass: capitaux_propres_assimiles
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "135"
+    category: provisions_reglementees
+    mass: capitaux_propres_assimiles
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "141"
+    category: emprunts_obligataires
+    mass: dettes_de_financement
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "148"
+    category: autres_dettes_de_financement
+    mass: dettes_de_financement
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "146"
+    category: depots_et_cautionnements_recus
+    mass: dettes_de_financement
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "151"
+    category: provisions_pour_risques
+    mass: provisions_durables_pour_risques_et_charges
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "155"
+    category: provisions_pour_charges
+    mass: provisions_durables_pour_risques_et_charges
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "17"
+    category: ecarts_de_conversion_passif_long_terme
+    mass: ecarts_de_conversion_passif
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  # ==========================================
+  # CLASSE 2 : ACTIF IMMOBILISE (ACTIF)
+  # ==========================================
   - prefix: "21"
-    category: immobilisations_non_valeurs
+    category: immobilisations_en_non_valeurs
     mass: actif_immobilise
+    statement: balance_sheet
+    side: actif
     normal_side: debit
     is_fictitious_asset: true
 
   - prefix: "22"
     category: immobilisations_incorporelles
     mass: actif_immobilise
+    statement: balance_sheet
+    side: actif
     normal_side: debit
-    is_fictitious_asset: false
 
   - prefix: "23"
     category: immobilisations_corporelles
     mass: actif_immobilise
+    statement: balance_sheet
+    side: actif
     normal_side: debit
-    is_fictitious_asset: false
 
   - prefix: "24"
     category: immobilisations_financieres
     mass: actif_immobilise
+    statement: balance_sheet
+    side: actif
     normal_side: debit
-    is_fictitious_asset: false
 
   - prefix: "25"
     category: immobilisations_financieres
     mass: actif_immobilise
+    statement: balance_sheet
+    side: actif
     normal_side: debit
-    is_fictitious_asset: false
+
+  - prefix: "27"
+    category: ecarts_de_conversion_actif_long_terme
+    mass: actif_immobilise
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
 
   - prefix: "28"
-    category: amortissements_immobilisations
+    category: amortissements_des_immobilisations
     mass: actif_immobilise
+    statement: balance_sheet
+    side: actif
     normal_side: credit
     is_contra_asset: true
 
   - prefix: "29"
-    category: provisions_immobilisations
+    category: provisions_pour_depreciation_des_immobilisations
     mass: actif_immobilise
+    statement: balance_sheet
+    side: actif
     normal_side: credit
     is_contra_asset: true
 
+  # ==========================================
+  # CLASSE 3 : ACTIF CIRCULANT (HORS TRESORERIE)
+  # ==========================================
   - prefix: "31"
     category: stocks
-    mass: actif_circulant_stocks
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
     normal_side: debit
 
-  - prefix: "34"
-    category: creances_clients
-    mass: actif_circulant_creances
+  - prefix: "341"
+    category: fournisseurs_debiteurs_avances
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
     normal_side: debit
 
+  - prefix: "342"
+    category: creances_clients_et_comptes_rattaches
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "343"
+    category: personnel_debiteur
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "345"
+    category: etat_debiteur
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "346"
+    category: associes_debiteurs
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "348"
+    category: autres_debiteurs
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "349"
+    category: comptes_de_regularisation_actif
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "35"
+    category: titres_et_valeurs_de_placement
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "37"
+    category: ecarts_de_conversion_actif_circulant
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "39"
+    category: provisions_pour_depreciation_actif_circulant
+    mass: actif_circulant_ht
+    statement: balance_sheet
+    side: actif
+    normal_side: credit
+    is_contra_asset: true
+
+  # ==========================================
+  # CLASSE 4 : PASSIF CIRCULANT (HORS TRESORERIE)
+  # ==========================================
   - prefix: "441"
-    category: creances_clients
-    mass: actif_circulant_creances
-    normal_side: debit
+    category: fournisseurs_et_comptes_rattaches
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "442"
+    category: clients_crediteurs_avances
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "443"
+    category: personnel_crediteur
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "444"
+    category: organismes_sociaux
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "445"
+    category: etat_crediteur
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "446"
+    category: associes_crediteurs
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
 
   - prefix: "448"
-    category: fournisseurs
-    mass: passif_circulant
+    category: autres_creanciers
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
     normal_side: credit
 
-  - prefix: "44"
-    category: autres_creances
-    mass: actif_circulant_creances
-    normal_side: debit
+  - prefix: "449"
+    category: comptes_de_regularisation_passif
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
 
-  - prefix: "51"
-    category: tresorerie_actif
+  - prefix: "45"
+    category: autres_provisions_pour_risques_et_charges_circulant
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  - prefix: "47"
+    category: ecarts_de_conversion_passif_circulant
+    mass: passif_circulant_ht
+    statement: balance_sheet
+    side: passif
+    normal_side: credit
+
+  # ==========================================
+  # CLASSE 5 : TRESORERIE
+  # ==========================================
+  - prefix: "511"
+    category: cheques_et_valeurs_a_encaisser
     mass: tresorerie_actif
+    statement: balance_sheet
+    side: actif
     normal_side: debit
 
-  - prefix: "55"
-    category: tresorerie_passif
+  - prefix: "514"
+    category: banques_et_tresorerie_generale_debiteur
+    mass: tresorerie_actif
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "516"
+    category: caisses_regies_davances
+    mass: tresorerie_actif
+    statement: balance_sheet
+    side: actif
+    normal_side: debit
+
+  - prefix: "59"
+    category: provisions_pour_depreciation_tresorerie
+    mass: tresorerie_actif
+    statement: balance_sheet
+    side: actif
+    normal_side: credit
+    is_contra_asset: true
+
+  - prefix: "552"
+    category: credits_descompte
     mass: tresorerie_passif
+    statement: balance_sheet
+    side: passif
     normal_side: credit
 
-  - prefix: "11"
-    category: capitaux_propres
-    mass: capitaux_propres
+  - prefix: "553"
+    category: credits_de_tresorerie
+    mass: tresorerie_passif
+    statement: balance_sheet
+    side: passif
     normal_side: credit
 
-  - prefix: "12"
-    category: capitaux_propres
-    mass: capitaux_propres
+  - prefix: "554"
+    category: banques_solde_crediteur
+    mass: tresorerie_passif
+    statement: balance_sheet
+    side: passif
     normal_side: credit
 
-  - prefix: "13"
-    category: capitaux_propres
-    mass: capitaux_propres
+  - prefix: "559"
+    category: banques_solde_crediteur
+    mass: tresorerie_passif
+    statement: balance_sheet
+    side: passif
     normal_side: credit
 
-  - prefix: "14"
-    category: dettes_financement_long_terme
-    mass: dettes_financement
+  # ==========================================
+  # CLASSE 6 : CHARGES (CPC)
+  # ==========================================
+  - prefix: "611"
+    category: achats_revendus_de_marchandises
+    mass: charges_dexploitation
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "612"
+    category: achats_consommes_de_matieres_et_fournitures
+    mass: charges_dexploitation
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "613"
+    category: autres_charges_externes
+    mass: charges_dexploitation
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "614"
+    category: autres_charges_externes
+    mass: charges_dexploitation
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "616"
+    category: impots_et_taxes
+    mass: charges_dexploitation
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "617"
+    category: charges_de_personnel
+    mass: charges_dexploitation
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "618"
+    category: autres_charges_dexploitation
+    mass: charges_dexploitation
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "619"
+    category: dotations_dexploitation
+    mass: charges_dexploitation
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "631"
+    category: charges_dinterets
+    mass: charges_financieres
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "633"
+    category: pertes_de_change
+    mass: charges_financieres
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "638"
+    category: autres_charges_financieres
+    mass: charges_financieres
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "639"
+    category: dotations_financieres
+    mass: charges_financieres
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "651"
+    category: valeurs_nettes_damortissement_des_immobilisations_cedees
+    mass: charges_non_courantes
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "656"
+    category: subventions_accordees
+    mass: charges_non_courantes
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "658"
+    category: autres_charges_non_courantes
+    mass: charges_non_courantes
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "659"
+    category: dotations_non_courantes
+    mass: charges_non_courantes
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  - prefix: "670"
+    category: impots_sur_les_resultats
+    mass: impots_sur_les_resultats
+    statement: cpc
+    side: charge
+    normal_side: debit
+
+  # ==========================================
+  # CLASSE 7 : PRODUITS (CPC)
+  # ==========================================
+  - prefix: "711"
+    category: ventes_de_marchandises
+    mass: produits_dexploitation
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "712"
+    category: ventes_de_biens_et_services_produits
+    mass: produits_dexploitation
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "713"
+    category: variation_des_stocks_de_produits
+    mass: produits_dexploitation
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "714"
+    category: immobilisations_produites_par_lentreprise_pour_elle_meme
+    mass: produits_dexploitation
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "716"
+    category: subventions_dexploitation
+    mass: produits_dexploitation
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "718"
+    category: autres_produits_dexploitation
+    mass: produits_dexploitation
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "719"
+    category: reprises_dexploitation_transferts_de_charges
+    mass: produits_dexploitation
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "732"
+    category: produits_des_titres_de_participation_et_autres_titres
+    mass: produits_financiers
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "733"
+    category: gains_de_change
+    mass: produits_financiers
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "738"
+    category: interets_et_autres_produits_financiers
+    mass: produits_financiers
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "739"
+    category: reprises_financieres_transferts_de_charges
+    mass: produits_financiers
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "751"
+    category: produits_des_cessions_dimmobilisations
+    mass: produits_non_courants
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "756"
+    category: subventions_dequilibre
+    mass: produits_non_courants
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "757"
+    category: reprises_sur_subventions_dinvestissement
+    mass: produits_non_courants
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "758"
+    category: autres_produits_non_courants
+    mass: produits_non_courants
+    statement: cpc
+    side: produit
+    normal_side: credit
+
+  - prefix: "759"
+    category: reprises_non_courantes_transferts_de_charges
+    mass: produits_non_courants
+    statement: cpc
+    side: produit
     normal_side: credit

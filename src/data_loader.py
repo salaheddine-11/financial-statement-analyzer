@@ -35,7 +35,7 @@ def load_trial_balance(source):
     df["credit"] = pd.to_numeric(df["credit"], errors="coerce")
 
     # Clean text columns
-    df["account_code"] = df["account_code"].astype(str).str.strip()
+    df["account_code"] = df["account_code"].astype(str).str.strip().str.replace(r"\.0$", "", regex=True)
     df["account_label"] = df["account_label"].astype(str).str.strip()
 
     # Drop rows without year or account code
